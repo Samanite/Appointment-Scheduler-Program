@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddCustomerController">
+   <children>
+      <Label fx:id="titleLabel" alignment="CENTER" layoutX="170.0" layoutY="23.0" prefHeight="17.0" prefWidth="231.0" text="Add Customer" />
+      <Button fx:id="addCusCancelButton" layoutX="449.0" layoutY="421.0" mnemonicParsing="false" onAction="#backToCustomers" prefHeight="25.0" prefWidth="77.0" text="Cancel" />
+      <Button fx:id="addCusButton" layoutX="364.0" layoutY="421.0" mnemonicParsing="false" onAction="#addNewCustomer" prefHeight="25.0" prefWidth="77.0" text="Add" />
+      <Label fx:id="nameLabel" alignment="CENTER_RIGHT" layoutX="26.0" layoutY="116.0" prefHeight="17.0" prefWidth="64.0" text="Name" />
+      <Label fx:id="addressLabel" alignment="CENTER_RIGHT" layoutX="26.0" layoutY="161.0" prefHeight="17.0" prefWidth="64.0" text="Address" />
+      <ComboBox fx:id="addCusCountrySelect" layoutX="351.0" layoutY="112.0" onAction="#countrySelectAction" prefWidth="150.0" />
+      <ComboBox fx:id="addCusStateSelect" layoutX="351.0" layoutY="157.0" prefWidth="150.0" />
+      <Label fx:id="postalCodeLabel" alignment="CENTER_RIGHT" layoutX="8.0" layoutY="251.0" prefHeight="17.0" prefWidth="89.0" text="Postal Code" />
+      <Label fx:id="phoneLabel" alignment="CENTER_RIGHT" layoutX="11.0" layoutY="296.0" prefHeight="17.0" prefWidth="89.0" text="Phone #" />
+      <TextField fx:id="addCusPhoneField" layoutX="110.0" layoutY="292.0" onKeyTyped="#phoneMaxCharAction" />
+      <TextField fx:id="addCusPosCodeField" layoutX="110.0" layoutY="247.0" onKeyTyped="#postalCodeMaxCharAction" />
+      <Label fx:id="idLabel" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="59.0" prefHeight="17.0" prefWidth="77.0" text="ID" />
+      <TextField fx:id="addCusIDField" disable="true" layoutX="99.0" layoutY="55.0" prefHeight="25.0" prefWidth="52.0" />
+      <Label fx:id="countryLabel" alignment="CENTER_RIGHT" layoutX="251.0" layoutY="116.0" prefHeight="17.0" prefWidth="89.0" text="Country" />
+      <Label fx:id="provinceLabel" alignment="CENTER_RIGHT" layoutX="252.0" layoutY="161.0" prefHeight="17.0" prefWidth="89.0" text="State/Province" />
+      <TextField fx:id="addCusNameField" layoutX="99.0" layoutY="112.0" onKeyTyped="#nameMaxCharAction" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="addCusAddressField" layoutX="99.0" layoutY="157.0" onKeyTyped="#addressMaxCharAction" prefHeight="25.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>
